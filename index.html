@@ -43,15 +43,15 @@
         }
 
         .music-prompt .envelope {
-            width: 120px;
-            height: 90px;
+            width: 150px;
+            height: 110px;
             position: relative;
             animation: float 2s ease-in-out infinite;
         }
 
         .music-prompt .envelope-body {
-            width: 120px;
-            height: 80px;
+            width: 150px;
+            height: 100px;
             background: #f5f0e8;
             border-radius: 4px;
             position: absolute;
@@ -62,9 +62,9 @@
         .music-prompt .envelope-flap {
             width: 0;
             height: 0;
-            border-left: 60px solid transparent;
-            border-right: 60px solid transparent;
-            border-top: 50px solid #e8dcc8;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-top: 60px solid #e8dcc8;
             position: absolute;
             top: 10px;
             animation: flapOpen 2s ease-in-out infinite;
@@ -101,8 +101,8 @@
         .music-prompt .names-preview {
             color: #c4956a;
             font-family: 'Great Vibes', cursive;
-            font-size: 36px;
-            margin-top: 15px;
+            font-size: 48px;
+            margin-top: 20px;
         }
 
         @keyframes pulse {
@@ -139,7 +139,7 @@
 
         /* Main content */
         .invitation {
-            max-width: 480px;
+            max-width: 100%;
             margin: 0 auto;
             opacity: 0;
             transition: opacity 1s ease;
@@ -175,8 +175,8 @@
 
         .corner-floral {
             position: absolute;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             opacity: 0.15;
         }
 
@@ -210,8 +210,8 @@
         }
 
         .rings-icon svg {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             fill: none;
             stroke: #8b6f4e;
             stroke-width: 1.5;
@@ -219,31 +219,31 @@
 
         .hero-subtitle {
             font-family: 'Playfair Display', serif;
-            font-size: 14px;
-            letter-spacing: 6px;
+            font-size: 18px;
+            letter-spacing: 8px;
             text-transform: uppercase;
             color: #8b6f4e;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             animation: fadeInDown 1s ease 0.5s both;
         }
 
         .divider {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin: 10px 0;
+            gap: 20px;
+            margin: 15px 0;
             animation: fadeIn 1s ease 0.7s both;
         }
 
         .divider-line {
-            width: 80px;
+            width: 120px;
             height: 1px;
             background: linear-gradient(to right, transparent, #8b6f4e, transparent);
         }
 
         .divider-ornament {
             color: #8b6f4e;
-            font-size: 14px;
+            font-size: 18px;
         }
 
         .hero-names {
@@ -253,7 +253,7 @@
         }
 
         .hero-names .name {
-            font-size: 56px;
+            font-size: 90px;
             color: #5a5a3a;
             display: block;
             line-height: 1.2;
@@ -261,7 +261,7 @@
         }
 
         .hero-names .ampersand {
-            font-size: 40px;
+            font-size: 60px;
             color: #8b6f4e;
             display: block;
             margin: -5px 0;
@@ -269,10 +269,10 @@
 
         .hero-date {
             font-family: 'Playfair Display', serif;
-            font-size: 16px;
+            font-size: 20px;
             color: #8b6f4e;
-            letter-spacing: 3px;
-            margin-top: 20px;
+            letter-spacing: 5px;
+            margin-top: 25px;
             animation: fadeInUp 1s ease 1.1s both;
         }
 
@@ -301,18 +301,18 @@
 
         /* Section styles */
         .section {
-            padding: 60px 30px;
+            padding: 80px 30px;
             text-align: center;
             position: relative;
         }
 
         .section-ornament {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         .section-ornament svg {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             fill: #8b6f4e;
             opacity: 0.6;
         }
@@ -324,10 +324,10 @@
 
         .greeting-title {
             font-family: 'Playfair Display', serif;
-            font-size: 28px;
+            font-size: 42px;
             font-weight: 600;
             color: #5a5a3a;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.8s ease;
@@ -339,10 +339,10 @@
         }
 
         .greeting-text {
-            font-size: 18px;
+            font-size: 22px;
             line-height: 1.8;
             color: #6a6a5a;
-            max-width: 350px;
+            max-width: 600px;
             margin: 0 auto;
             opacity: 0;
             transform: translateY(30px);
@@ -377,9 +377,12 @@
         .date-card {
             background: rgba(245,240,232,0.95);
             border-radius: 20px;
-            padding: 50px 30px;
+            padding: 60px 40px;
             position: relative;
             margin-top: 40px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             opacity: 0;
             transform: translateY(40px);
@@ -438,7 +441,7 @@
 
         .date-big {
             font-family: 'Playfair Display', serif;
-            font-size: 52px;
+            font-size: 64px;
             font-weight: 700;
             color: #3a3a2a;
             line-height: 1.1;
@@ -447,16 +450,16 @@
         .date-details {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            margin-top: 10px;
+            gap: 50px;
+            margin-top: 15px;
             font-family: 'Playfair Display', serif;
         }
 
         .date-detail-item {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 700;
             color: #5a5a3a;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
         }
 
         .date-divider {
@@ -480,23 +483,23 @@
 
         .countdown-number {
             font-family: 'Playfair Display', serif;
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 700;
             color: #5a5a3a;
             background: rgba(139,111,78,0.08);
-            width: 60px;
-            height: 60px;
+            width: 75px;
+            height: 75px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 12px;
+            border-radius: 14px;
             border: 1px solid rgba(139,111,78,0.15);
         }
 
         .countdown-label {
-            font-size: 11px;
+            font-size: 13px;
             color: #8b6f4e;
-            margin-top: 6px;
+            margin-top: 8px;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
@@ -510,7 +513,10 @@
         .location-card {
             background: #fff;
             border-radius: 20px;
-            padding: 40px 25px;
+            padding: 50px 40px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
             box-shadow: 0 10px 40px rgba(0,0,0,0.08);
             position: relative;
             overflow: hidden;
@@ -535,8 +541,8 @@
         }
 
         .location-icon {
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             background: linear-gradient(135deg, #8b6f4e, #c4956a);
             border-radius: 50%;
             display: flex;
@@ -554,22 +560,22 @@
 
         .location-title {
             font-family: 'Playfair Display', serif;
-            font-size: 22px;
+            font-size: 28px;
             font-weight: 600;
             color: #5a5a3a;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .location-address {
-            font-size: 17px;
+            font-size: 20px;
             color: #6a6a5a;
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .location-map {
             width: 100%;
-            height: 200px;
+            height: 300px;
             border-radius: 12px;
             overflow: hidden;
             margin-bottom: 20px;
@@ -585,14 +591,14 @@
         .map-btn {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             background: linear-gradient(135deg, #8b6f4e, #6b5a3e);
             color: #fff;
-            padding: 14px 30px;
+            padding: 16px 36px;
             border-radius: 50px;
             text-decoration: none;
             font-family: 'Playfair Display', serif;
-            font-size: 15px;
+            font-size: 17px;
             letter-spacing: 1px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(139,111,78,0.3);
@@ -617,11 +623,11 @@
 
         .wishes-text {
             font-family: 'Playfair Display', serif;
-            font-size: 20px;
+            font-size: 26px;
             font-style: italic;
             color: #6a6a5a;
             line-height: 1.8;
-            max-width: 320px;
+            max-width: 550px;
             margin: 0 auto;
             opacity: 0;
             transform: translateY(30px);
@@ -636,22 +642,22 @@
         /* Footer */
         .footer {
             background: #2c2c1e;
-            padding: 40px 30px;
+            padding: 60px 30px;
             text-align: center;
         }
 
         .footer-names {
             font-family: 'Great Vibes', cursive;
-            font-size: 36px;
+            font-size: 48px;
             color: #c4956a;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .footer-date {
             font-family: 'Playfair Display', serif;
-            font-size: 14px;
+            font-size: 16px;
             color: rgba(245,240,232,0.5);
-            letter-spacing: 3px;
+            letter-spacing: 4px;
         }
 
         .footer-hearts {
@@ -730,12 +736,82 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Responsive */
-        @media (max-width: 380px) {
+        /* Desktop large */
+        @media (min-width: 1200px) {
+            .hero-names .name { font-size: 110px; }
+            .hero-names .ampersand { font-size: 70px; }
+            .hero-subtitle { font-size: 20px; letter-spacing: 10px; }
+            .divider-line { width: 160px; }
+            .section { padding: 100px 60px; }
+            .greeting-title { font-size: 48px; }
+            .greeting-text { font-size: 24px; max-width: 700px; }
+            .date-card { max-width: 750px; padding: 70px 60px; }
+            .date-big { font-size: 72px; }
+            .date-detail-item { font-size: 22px; }
+            .countdown { gap: 25px; }
+            .countdown-number { width: 85px; height: 85px; font-size: 40px; }
+            .countdown-label { font-size: 14px; }
+            .location-card { max-width: 750px; padding: 60px 50px; }
+            .location-map { height: 350px; }
+            .location-title { font-size: 32px; }
+            .location-address { font-size: 22px; }
+            .wishes-text { font-size: 28px; max-width: 650px; }
+            .footer-names { font-size: 56px; }
+            .corner-floral { width: 300px; height: 300px; }
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            .hero-names .name { font-size: 72px; }
+            .hero-names .ampersand { font-size: 48px; }
+            .hero-subtitle { font-size: 16px; letter-spacing: 6px; }
+            .divider-line { width: 100px; }
+            .section { padding: 70px 25px; }
+            .greeting-title { font-size: 36px; }
+            .greeting-text { font-size: 20px; }
+            .date-big { font-size: 52px; }
+            .date-detail-item { font-size: 18px; }
+            .location-map { height: 250px; }
+            .wishes-text { font-size: 22px; }
+            .footer-names { font-size: 42px; }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+            .hero-names .name { font-size: 56px; }
+            .hero-names .ampersand { font-size: 40px; }
+            .hero-subtitle { font-size: 13px; letter-spacing: 5px; }
+            .hero-date { font-size: 16px; letter-spacing: 3px; }
+            .divider-line { width: 70px; }
+            .section { padding: 50px 20px; }
+            .greeting-title { font-size: 28px; }
+            .greeting-text { font-size: 17px; max-width: 320px; }
+            .date-card { padding: 45px 25px; }
+            .date-big { font-size: 42px; }
+            .date-details { gap: 30px; }
+            .date-detail-item { font-size: 15px; }
+            .countdown { gap: 10px; }
+            .countdown-number { width: 58px; height: 58px; font-size: 28px; border-radius: 10px; }
+            .countdown-label { font-size: 10px; }
+            .location-card { padding: 35px 20px; }
+            .location-title { font-size: 22px; }
+            .location-address { font-size: 17px; }
+            .location-map { height: 200px; }
+            .map-btn { padding: 12px 24px; font-size: 14px; }
+            .wishes-text { font-size: 18px; max-width: 300px; }
+            .footer { padding: 40px 20px; }
+            .footer-names { font-size: 34px; }
+            .footer-date { font-size: 13px; }
+            .corner-floral { width: 120px; height: 120px; }
+        }
+
+        /* Small mobile */
+        @media (max-width: 360px) {
             .hero-names .name { font-size: 44px; }
             .hero-names .ampersand { font-size: 32px; }
-            .date-big { font-size: 42px; }
-            .countdown-number { width: 50px; height: 50px; font-size: 26px; }
+            .date-big { font-size: 36px; }
+            .countdown-number { width: 50px; height: 50px; font-size: 24px; }
+            .greeting-title { font-size: 24px; }
         }
     </style>
 </head>
@@ -754,7 +830,7 @@
 
     <!-- Background Music -->
     <audio id="bgMusic" loop>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+        <source src="music/Woodsman - Dream River.mp3" type="audio/mpeg">
     </audio>
 
     <!-- Music Toggle Button -->
@@ -882,13 +958,14 @@
 
                 <div class="location-map">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24526.28!2d71.03!3d41.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb4c9d36c0c6f1%3A0x1!2sUychi%2C+Namangan+Region!5e0!3m2!1sen!2s!4v1"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768858.636000842!2d70.5324837!3d41.17044445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb5700233aeb7b%3A0x8bebd731164031c5!2sVISOL!5e0!3m2!1sen!2s!4v1774876112904!5m2!1sen!2s"
                         allowfullscreen=""
-                        loading="lazy">
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
 
-                <a href="https://www.google.com/maps/search/Visol+restoran+Uychi+tumani" target="_blank" class="map-btn">
+                <a href="https://www.google.com/maps/place/VISOL/@41.17044445,70.5324837,8z" target="_blank" class="map-btn">
                     <svg viewBox="0 0 24 24">
                         <path d="M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z"/>
                     </svg>
